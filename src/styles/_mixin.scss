@@ -1,0 +1,19 @@
+@import 'media';
+
+@mixin mobile {
+	@media screen and (max-width: #{$size-lg - 0.02}px) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media screen and (min-width: #{$size-lg}px) {
+		@content;
+	}
+}
+
+@mixin clamp($i) {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: $i;
+	-webkit-box-orient: vertical;
+}

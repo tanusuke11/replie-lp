@@ -1,0 +1,48 @@
+// Max width at which point
+// current size ends
+$breakpoint-sm: 479px !default;
+$breakpoint-md: 767px !default;
+$breakpoint-lg: 975px !default;
+$breakpoint-xl: 1439px !default;
+
+// sorry for long line; we need .sass and it doesn't support multi-line list
+$sizes: (
+	'sm': (
+		$breakpoint-sm + 1
+	),
+	'md': (
+		$breakpoint-md + 1
+	),
+	'lg': (
+		$breakpoint-lg + 1
+	),
+	'xl': (
+		$breakpoint-xl + 1
+	)
+) !default;
+
+$breakpoint-sm-max: (map-get($sizes, 'sm') - 0.02) !default;
+
+$breakpoint-md-min: map-get($sizes, 'sm') !default;
+$breakpoint-md-max: (map-get($sizes, 'md') - 0.02) !default;
+
+$breakpoint-lg-min: map-get($sizes, 'md') !default;
+$breakpoint-lg-max: (map-get($sizes, 'lg') - 0.02) !default;
+
+$breakpoint-xl-min: map-get($sizes, 'g') !default;
+$breakpoint-xl-max: (map-get($sizes, 'xl') - 0.02) !default;
+
+$breakpoint-xl-min: map-get($sizes, 'xl') !default;
+
+// Custom Variables
+$size-sm: 480 !default;
+$size-md: 768 !default;
+$size-lg: 976 !default;
+$size-xl: 1440 !default;
+
+:export {
+	sizeSm: $size-sm;
+	sizeXs: $size-md;
+	sizeLg: $size-lg;
+	sizeXl: $size-xl;
+}

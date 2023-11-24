@@ -1,0 +1,21 @@
+@import 'mixin';
+
+:global {
+	.u-desktop {
+		@include mobile {
+			display: none;
+		}
+	}
+
+	.u-mobile {
+		@include desktop {
+			display: none;
+		}
+	}
+
+	@for $i from 1 through 10 {
+		.u-clamp-#{$i} {
+			@include clamp($i);
+		}
+	}
+}
