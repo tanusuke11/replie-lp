@@ -24,8 +24,13 @@
 						href="https://app.replie.net/?openExternalBrowser=1"
 						target="_blank"
 						rel="noopener noreferrer"
+						style="pointer-events: none;"
 					>
-						使ってみる
+					<div>
+
+						<del>使ってみる</del>
+						<div class="font-bold">サービス準備中</div>
+					</div>
 						<svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
 							<path
 								d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
